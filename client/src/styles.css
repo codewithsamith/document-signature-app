@@ -1,0 +1,204 @@
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+}
+
+button:disabled{
+  background:#999;
+  cursor:not-allowed;
+}
+
+/* LOGIN BACKGROUND */
+
+.login-bg{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* LOGIN CARD */
+
+.login-card{
+  background:white;
+  width:360px;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.25);
+  animation:fadeIn 0.8s ease;
+}
+
+.login-card h2{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+/* INPUT */
+
+.login-card input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-size:14px;
+}
+
+.login-card input:focus{
+  border-color:#667eea;
+  outline:none;
+}
+
+/* BUTTON */
+
+.login-card button{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#667eea;
+  color:white;
+  font-weight:bold;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.login-card button:hover{
+  background:#5565d8;
+}
+
+.login-link{
+  text-align:center;
+  margin-top:15px;
+  color:#667eea;
+  cursor:pointer;
+}
+
+/* DASHBOARD BACKGROUND */
+
+.dashboard{
+  min-height:100vh;
+  padding:40px;
+  background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+/* TITLE */
+
+.dashboard h2{
+  text-align:center;
+  color:white;
+  margin-bottom:30px;
+  font-size:28px;
+}
+
+/* UPLOAD BOX */
+
+.upload-box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  width:400px;
+  margin:auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  animation:fadeIn 0.8s ease;
+}
+
+.upload-box h3{
+  margin-bottom:10px;
+}
+
+.upload-box input{
+  width:100%;
+  margin-bottom:10px;
+}
+
+.upload-box button{
+  width:100%;
+  padding:10px;
+  background:#4facfe;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.upload-box button:hover{
+  background:#2d7de4;
+  transform:scale(1.03);
+}
+
+/* DOCUMENT GRID */
+
+.doc-list{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* DOCUMENT CARD */
+
+.doc-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  transition:0.3s;
+  animation:fadeIn 0.6s ease;
+}
+
+.doc-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.doc-card span{
+  font-weight:bold;
+  display:block;
+  margin-bottom:10px;
+}
+
+/* BUTTON GROUP */
+
+.doc-actions{
+  display:flex;
+  gap:10px;
+}
+
+.doc-actions button{
+  flex:1;
+  padding:8px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  background:#4facfe;
+  color:white;
+  transition:0.3s;
+}
+
+.doc-actions button:hover{
+  background:#2d7de4;
+}
+
+.doc-actions button:last-child{
+  background:#00c853;
+}
+
+.doc-actions button:last-child:hover{
+  background:#00a844;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
